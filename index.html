@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Văn Bán Hàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/article.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body style="height: 3000px;">
+    <header>
+        <div id="logo">Van<span id="logo-span">ZuiZe</span></div>
+        <span class="sign"><a href="shopping_cart.html" class="act"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a></span>
+        <span class="sign"><a href="register.html" class="act">ĐĂNG KÝ</a></span>
+        <span class="sign"><a href="login.html" class="act">ĐĂNG NHẬP</a></span>
+    </header>
+
+    <div class="slider">
+        <div class="myslide fade">
+            <div class="txt">
+                <h1>Văn Zui Ze Bán Hàng</h1>
+                <p>Đồ Công Nghệ<br>Mại Zô Mại Zô!</p>
+            </div>
+            <img class="img_animation" src="image/img1.jpg" style="width: 100%; height: 100%;" alt="Ảnh bị lỗi thông cảm">
+        </div>
+
+        <div class="myslide fade">
+            <div class="txt">
+                <h1>Văn Zui Ze Bán Hàng</h1>
+                <p>Qủa Táo Cắn Dở<br>Sang......Chảnh!</p>
+            </div>
+            <img class="img_animation" src="image/img2.jpg" style="width: 100%; height: 100%;" alt="Ảnh bị lỗi thông cảm">
+        </div>
+
+        <div class="myslide fade">
+            <div class="txt">
+                <h1>Văn Zui Ze Bán Hàng</h1>
+                <p>Con Rồng Lộn Cục Súc<br>Ngầu Đéttttttt!</p>
+            </div>
+            <img class="img_animation" src="image/img3.jpg" style="width: 100%; height: 100%;" alt="Ảnh bị lỗi thông cảm">
+        </div>
+
+        <div class="myslide fade">
+            <div class="txt">
+                <h1>Văn Zui Ze Bán Hàng</h1>
+                <p>Đối Thủ Của Táo Cắn Dở<br>SuperCamera!</p>
+            </div>
+            <img class="img_animation" src="image/img4.jpg" style="width: 100%; height: 100%;" alt="Ảnh bị lỗi thông cảm">
+        </div>
+
+        <div class="myslide fade">
+            <div class="txt">
+                <h1>Văn Zui Ze Bán Hàng</h1>
+                <p>PlayStation<br>Nói Chung Là Chất!</p>
+            </div>
+            <img class="img_animation" src="image/img5.jpg" style="width: 100%; height: 100%;" alt="Ảnh bị lỗi thông cảm">
+        </div>
+        
+        <!--onclick-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="dotsbox" style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+			<span class="dot" onclick="currentSlide(5)"></span>
+		</div>
+    </div>
+
+    <nav>
+        <div class="images_action">
+            <div class="img_slide">
+                <button>FIRST</button>
+                <button>BACK</button>
+                <button>STOP</button>
+                <span id="info">1/5</span>
+                <button>START</button>
+                <button>NEXT</button>
+                <button>FINAL</button>
+            </div>
+        </div>
+    </nav>
+
+
+    <article>
+        <div class="container">
+            <div class="card">
+                <div class="images">
+                    <img src="image/apple_product1.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>APPLE IMAC</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$1.716,56</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/apple_product2.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>APPLE MACBOOK</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$2.122,09</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/apple_product3.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>APPLE IPHONE</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$1.099,00</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/apple_product4.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>APPLE IPAD</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$1.263,59</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/apple_product5.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>APPLE WATCH</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$443,92</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/apple_product6.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>APPLE PENCIL</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$142,62</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/apple_product7.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>APPLE KEYBOARD</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$107,42</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/apple_product8.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>APPLE MOUSE</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$81,54</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/msi_product1.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>MSI PC</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$3.601,81</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/msi_product2.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>MSI LAPTOP</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$1.078,51</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/msi_product3.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>MSI MONITOR</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$232,53</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/msi_product4.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>MSI GEAR & GIF</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$50</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/samsung_product1.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>SAMSUNG LAPTOP</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$1.009,06</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/samsung_product2.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>SAMSUNG SMARTPHONE</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$1.078,08</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/samsung_product3.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>SAMSUNG TABLET</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$862,81</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/samsung_product4.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>SAMSUNG MONITOR</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$366,70</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/ps_product1.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>PLAYSTATION</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$668,68</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/ps_product2.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>GHOST OF TSUSHIMA</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$75,50</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/ps_product3.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>MARVEL'S SPIDER-MAN: MILES MORALES</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$76,79</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="images">
+                    <img src="image/ps_product4.png" alt="">
+                    <ul class="action">
+                        <li>
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span>Thêm Vào Mục Yêu Thích</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            <span>Thêm Vào Shop Của Bạn</span>
+                        </li>
+                        <li>
+                            <i class="fa fa-eye" aria-hidden="true"></i>
+                            <span>Xem Chi Tiết</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="productname">
+                        <h3>RATCHET CLANK RIFT APART</h3>
+                    </div>
+                    <div class="price_rating">
+                        <h2>$39,89</h2>
+                        <div class="rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa discount fa-star" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        
+        <div class="fter_container">
+            <h2>MADE BY NGUYỄN THƯỢNG VĂN - PH19604</h2>
+            <div class="row">
+                <div class="footer_col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer_col">
+                    <h4>follow us</h4>
+                    <div class="social_links">
+                        <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/header.js"></script>
+    <script src="js/nav.js"></script>
+</body>
+</html>

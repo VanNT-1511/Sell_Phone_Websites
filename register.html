@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">Đăng Ký</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Họ Tên</span>
+                    <input type="text" placeholder="Hãy Nhập Họ Tên" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="email" placeholder="Hãy Nhập Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Số Điện Thoại</span>
+                    <input type="text" placeholder="Hãy Nhập Số Điện Thoại" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Quốc Gia</span>
+                    <select name="" id="location">
+                        <option value=""></option>
+                        <option value="VietNamDong">Việt Nam</option>
+                        <option value="HoaKy">Hoa Kỳ</option>
+                        <option value="NhatBan">Nhật Bản</option>
+                        <option value="HanQuoc">Hàn Quốc</option>
+                        <option value="TrungQuoc">Trung Quốc</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="details">Mã Tiền Tệ</span>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="method-details">
+                <input type="radio" name="method" id="dot-1">
+                <input type="radio" name="method" id="dot-2">
+                <span class="method-title">Hình Thức Thanh Toán</span>
+                <div class="category">
+                    <label for="dot-1">
+                        <span class="dot one"></span>
+                        <span class="method">Tiền Mặt</span>
+                    </label>
+                    <label for="dot-2">
+                        <span class="dot two"></span>
+                        <span class="method">Thẻ</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="button">
+                <input type="submit" value="Đăng Ký">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

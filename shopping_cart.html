@@ -1,0 +1,107 @@
+                                                                                                                                                                                                                      <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" 
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/shopping_cart.css">
+</head>
+<body>
+     <div class="container">
+         <h2>GIỎ HÀNG <i class="fa fa-shopping-bag" aria-hidden="true"></i></h2>
+         <div class="choose">
+            <select name="" id="price_number" onchange="change_price()">
+                <option value="-1">Chọn mức giá</option>
+                <option value="200">Đến 200</option>
+                <option value="400">Đến 400</option>
+                <option value="600">Đến 600</option>
+                <option value="800">Đến 800</option>
+            </select>
+         </div>
+         <table border="1" id="table_Product">
+             <tr>
+                 <th></th>
+                 <th>Hàng Hóa</th>
+                 <th>Hình Ảnh</th>
+                 <th>Đơn Giá</th>
+                 <th>Số Lượng</th>
+                 <th>Thành Tiền</th>
+             </tr>
+             <tr>
+                 <td><input type="checkbox" name="choose" onclick="checkbox_point(0)"></td>
+                 <td>APPLE IPAD MINI 6</td>
+                 <td><img src="image/ipad1.png" alt=""></td>
+                 <td name="price">600</td>
+                 <td><input onkeyup="total_money(this)" value="0" name="quantity" disabled></td>
+                 <td name="total_price"></td>
+             </tr>
+             <tr>
+                <td><input type="checkbox" name="choose" onclick="checkbox_point(1)"></td>
+                <td>APPLE IPHONE 12 PRO MAX</td>
+                <td><img src="image/iphone12promax.png" alt=""></td>
+                <td name="price">800</td>
+                <td><input onkeyup="total_money(this)" value="0" name="quantity" disabled></td>
+                <td name="total_price"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="choose" onclick="checkbox_point(2)"></td>
+                <td>LAPTOP MSI PRESTIGE 14 EVO</td>
+                <td><img src="image/laptopmsiprestige14evo.png" alt=""></td>
+                <td name="price">700</td>
+                <td><input onkeyup="total_money(this)" value="0" name="quantity" disabled></td>
+                <td name="total_price"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="choose" onclick="checkbox_point(3)"></td>
+                <td>LAPTOP SAMSUNG GALAXY BOOK PRO</td>
+                <td><img src="image/laptopsamsunggalaxybookpro.png" alt=""></td>
+                <td name="price">800</td>
+                <td><input onkeyup="total_money(this)" value="0" name="quantity" disabled></td>
+                <td name="total_price"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="choose" onclick="checkbox_point(4)"></td>
+                <td>PLAYSTATION 5</td>
+                <td><img src="image/playstation5.png" alt=""></td>
+                <td name="price">500</td>
+                <td><input onkeyup="total_money(this)" value="0" name="quantity" disabled></td>
+                <td name="total_price"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="choose" onclick="checkbox_point(5)"></td>
+                <td>MSI GEAR & GIF</td>
+                <td><img src="image/msi_product4.png" alt=""></td>
+                <td name="price">100</td>
+                <td><input onkeyup="total_money(this)" value="0" name="quantity" disabled></td>
+                <td name="total_price"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="choose" onclick="checkbox_point(6)"></td>
+                <td>SAMSUNG S20 ULTRA</td>
+                <td><img src="image/samsunggalaxys21ultra5gsilver.png" alt=""></td>
+                <td name="price">400</td>
+                <td><input onkeyup="total_money(this)" value="0" name="quantity" disabled></td>
+                <td name="total_price"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="choose" onclick="checkbox_point(7)"></td>
+                <td>MACBOOK PRO M1</td>
+                <td><img src="image/MacbookProM1.png" alt=""></td>
+                <td name="price">800</td>
+                <td><input onkeyup="total_money(this)" value="0" name="quantity" disabled></td>
+                <td name="total_price"></td>
+            </tr>
+            <tr class="total">
+                <th colspan="5">Tổng</th>
+                <td id="calculator"><b></b></td>
+            </tr>
+         </table>
+     </div>
+
+     <script type="text/javascript" src="js/shopping_cart.js"></script>
+</body>
+</html>
